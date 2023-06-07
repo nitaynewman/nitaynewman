@@ -13,7 +13,7 @@ menu.addEventListener('click', mobileMenu);
 // Show active menu when scrolling
 const highlightMenu = () => {
   const elem = document.querySelector('.highlight');
-  const homeMenu = document.querySelector('#home-page');
+  const homeMenu = document.querySelector('#Home-page');
   const aboutMenu = document.querySelector('#about-page');
   const classesMenu = document.querySelector('#classes-page');
   let scrollPos = window.scrollY;
