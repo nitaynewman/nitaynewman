@@ -6,7 +6,7 @@ import '../css/react.css'
 import {Link} from 'react-router-dom'
 
 
-const Cards = ({ cards, handleX, Title}) => {
+const Cards = ({ cards, Title }) => {
 
   
   // const [isLoadig, setLoading] = useState(true);

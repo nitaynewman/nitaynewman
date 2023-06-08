@@ -898,10 +898,12 @@
 /* create new lessons */
 .Create {
   max-width: 400px;
-  
   margin: 0 auto;
   text-align: center;
   color: whitesmoke;
+}
+#light .Create {
+  color: #000;
 }
 .Create label {
   text-align: left;
@@ -911,6 +913,9 @@
   font-size: 20px;
   color: whitesmoke;
   margin-bottom: 30px;
+}
+#light .Create h2 {
+  color: #000;
 }
 .Create input, .Create textarea, .Create select {
   width: 100% ;
