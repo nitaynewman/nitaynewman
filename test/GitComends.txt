@@ -1,0 +1,19 @@
+git add <file>..." - to add file to be tracked
+ git rm -r --cached <file> -  to remove file from bing tracked
+git add . - to track all files
+git commit -m "first commit" - snapshoting your files
+git diff - to see what changed
+git restore --staged <file> -  to remove file from staging
+git commit -a -m "commit" - to skip staging step and commit
+git rm "<file  name>" - delete file
+git  restore "<file  name>" - restore file
+git mv "corent file name" "new file name"- rename file
+git log - seeing commits 
+git commit -m "<message of changed commit>" --amend - to restore commited version
+git log -p - commit logs
+git reset <s.number>
+
+git branch - what branches exist
+git branch <name branch> - create branch
+git switch <diff branch> - switching branches
+git merge -m "merging to branches" TestBranch
