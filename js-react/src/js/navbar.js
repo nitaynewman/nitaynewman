@@ -11,7 +11,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (  
         <nav className="navbar">
       <div className="navbar_container">
-      <Link to="./Classes" id="navbar_logo">KnowItAll</Link>
+      <Link to="/" id="navbar_logo">KnowItAll</Link>
         <div className="navbar_toggle" id="mobile-menu">
           <span className="bar"></span> 
           <span className="bar"></span>
@@ -34,7 +34,7 @@ const Navbar = ({ theme, toggleTheme }) => {
            <ReactSwitch onChange={ toggleTheme } checked={theme === 'dark'}/>
           </li>
           <li className="navbar_btn">
-            <Link to="#sign-up" className="button" id="signup">Sign Up</Link>
+            <Link to="#" className="button" id="signup">Sign Up</Link>
           </li>
         </ul>
       </div>

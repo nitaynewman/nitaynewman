@@ -6,7 +6,7 @@ import '../css/react.css'
 import {Link} from 'react-router-dom'
 
 
-const Cards = ({ cards, Title }) => {
+const Cards = ({ cards, Title,  }) => {
 
   
   // const [isLoadig, setLoading] = useState(true);
@@ -19,7 +19,7 @@ const Cards = ({ cards, Title }) => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1250,
+        breakpoint: 1550,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
@@ -28,7 +28,7 @@ const Cards = ({ cards, Title }) => {
         }
       },
       {
-        breakpoint: 1000,
+        breakpoint: 1350,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -36,7 +36,7 @@ const Cards = ({ cards, Title }) => {
         }
       },
       {
-        breakpoint: 700,
+        breakpoint: 850,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -58,7 +58,7 @@ const Cards = ({ cards, Title }) => {
               <h1>{card.title}</h1>
               <h3>by professor: {card.professor}</h3>
               <button>
-                <Link to={`/Classes/${card.id}`} className="navbar_links">{card.price}</Link>
+                <Link to={`/Classes/${card.id}`} className="navbar_links">{ }</Link>
               </button>
             </div>
           </div>

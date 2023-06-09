@@ -21,7 +21,7 @@ function Classes() {
     <div className="Classes">
       { error && <div>{error}</div>}
       { isLoadig && <div>louding...</div>}
-      <h2>your  LESSONS</h2>
+      <h2>YOUR LESSONS</h2>
      
       {cards && <Cards Title="math class" cards={cards.filter((Card) => Card.title === "Math") }/>}
       {cards && <Cards Title="phisics class" cards={cards.filter((Card) => Card.title === "phisics" ) }/>}

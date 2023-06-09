@@ -24,6 +24,9 @@
     top: 0;
     z-index: 999;
   }
+  #light .navbar {
+    background: #ddd;
+  }
   
   .navbar_container {
     display: flex;
@@ -507,7 +510,15 @@
     margin-bottom: 5rem;
     font-size: 2rem;
   }
-  
+  .App h2 {
+    color: white;
+  }
+  #light .App h2 {
+    color: #131313;
+  }
+  #light .Classes h2 {
+    color: #131313;
+  }
   .classes_wrapper {
     display: flex;
     flex-direction: row;
@@ -537,6 +548,9 @@
     max-width: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  #light .card {
+    border: 1px solid #00dbde;
   }
   .blue {
     background: #0052D4;  /* fallback for old browsers */
