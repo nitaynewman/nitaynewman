@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios, { formToJSON } from 'axios';
+import Upload from "./UpLoad";
 
 const Create = () => {
     const[title, setTitle] = useState('');
@@ -93,6 +94,10 @@ const Create = () => {
                     <option value="uri">uri</option>
                     <option value="dumb dumb">dumb dumb</option>
                 </select>
+                <label>upload your lesson</label>
+                    <Upload />
+                    
+                
                 {/* <label> add vedio </label>
                 <div className="d-flex justify-content-center vh-100 bg-dark">
                     <div className="bg-white p-5 rounded w-50 vh-80">
