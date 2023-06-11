@@ -1,41 +1,54 @@
-import { useState } from "react";
-// https://www.youtube.com/watch?v=WwYcXR99j_4
-function Upload() {
-    const [vedio, setVedio] = useState()
-    
-    function handleVedio(event) {
-        setVedio(event.target.vedio[0])
-        console.log(event.target.vedio[0]);
-    }
-    function handleVedio() {
-        const formData = new FormData()
-        formData.append('vedio', vedio)
-        fetch(
-            'url',
-            {
-                method: 'POST',
-                body: formData
-            }
-        ).then((response) => response.json())
-        .then(
-            (result) => {
-                console.log('success', result)
-            }
-        ).catch(error => {
-            console.error('Error', error)
-        })
-        
-    }
+import { Button, Spin, Upload } from "antd";
 
+
+function Vedio() {
     return (
-        <div className="Upload">
-            <form>
-                <input type="file" name="file" onChange={handleVedio} />
-                <button>Upload</button>
-                <br /> <br />
-            </form>
+        <div 
+            style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+            }}
+        >
+            <Upload.Dragger
+                multiple
+                listType="picture" 
+                action={'http://localhost:700'}
+                // accept=".png" only accepting ending files
+                beforeUpload={(file) =>{
+                    console.log({ file });
+                    return true;
+                }}
+                defaultFileList={[
+                    {
+                        uid: 'abc',
+                        name: 'existing_file.png',
+                        status: 'uploading',
+                        percent: 50,
+                        url: 'https://www.google.com/',
+                    },
+                ]}
+                iconRender={() => {
+                    return <Spin></Spin>
+                }}
+                // itemRender={(existingComp, file) => {
+                //     return <p>{file.name}</p>;
+                // }}
+                progress={{
+                    strokeWidth: 3,
+                    strokeColor:{
+                        '0%':'#f0f',
+                        '100%':'#ff0',
+                    },
+                    style:{top:12},
+                }}
+                >
+                <h1>drag vedio here</h1>
+                <Button>Upload vedio</Button>
+            </Upload.Dragger>
         </div>
     );
 }
+export default Vedio;
  
-export default Upload;
