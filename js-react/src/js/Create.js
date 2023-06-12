@@ -52,7 +52,11 @@ const Create = () => {
 
     return (
         <div className="Create">
-            <h2>Add a new lesson</h2>
+            <h2
+            style={{
+                paddingTop: '30px'
+            }}
+            >Add a new lesson</h2>
             <form onSubmit={handleSubmit}>
                 <label>lessons subject: </label>
                 <select
@@ -96,7 +100,7 @@ const Create = () => {
                     <option value="dumb dumb">dumb dumb</option>
                 </select>
                 <label>upload your lesson</label>
-                    
+                    <Vedio />
                     
                 
                 {/* <label> add vedio </label>
@@ -126,4 +130,4 @@ const Create = () => {
     );
 }
  
-export default Create
+export default Create;

@@ -5,7 +5,12 @@ const NotFound = () => {
         <div className="not-found">
             <h2>SORRY😥</h2>
             <p>this page can't be found</p>
-            <Link to='/'>back to learn...</Link>
+            <Link to='/'
+            style={{
+                fontSize: "1.5rem",
+                color: '#299999'
+            }}
+            >back to learn...</Link>
         </div>
      );
 }

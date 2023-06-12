@@ -233,7 +233,7 @@
     color: #fff;
   }
   #light .hero_heading {
-    color: #192a8a;
+    color: #24444444;
     
   }
   
@@ -948,7 +948,46 @@
   border-radius: 8px;
   cursor: pointer;
 }
+.Upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
   
+}
+#light .upVedio{
+  background: whitesmoke;
+  min-width: 400px;
+  border-radius: 5px;
+}
+/* not found */
+.not-found {
+  
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 300px;
+}
+.not-found h2 {
+  font-size: 3rem;
+}
+#light .not-found h2 {
+  color: #131313;
+  
+}
+.not-found p {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin: 30px;
+}
+#light .not-found p {
+  color: #131313;
+}
+.not-found link {
+  font-size: 1.5rem;
+}
+
   /* https://www.youtube.com/watch?v=3-2Pj5hxwrw&t=2341s
   time 12:45 / 2:05:00*/ 
   
