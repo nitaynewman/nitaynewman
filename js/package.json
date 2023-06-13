@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react-router-dom": "^6.12.0",
+    "react-switch": "^7.0.0",
+    "react-tsparticles": "^2.10.1",
+    "switch": "^0.0.0",
+    "tsparticles": "^2.10.1"
+  }
+}
