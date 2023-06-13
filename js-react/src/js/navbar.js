@@ -1,4 +1,4 @@
-import "D:/Users/User/Desktop/Private/js/js-react/src/css/react.css";
+import "../css/react.css";
 import { Link } from 'react-router-dom';
 import ReactSwitch from 'react-switch';
 
@@ -7,11 +7,12 @@ import ReactSwitch from 'react-switch';
 
 
 const Navbar = ({ theme, toggleTheme }) => {
+  console.log("theme", theme);
   
     return (  
         <nav className="navbar">
       <div className="navbar_container">
-      <Link to="/" id="navbar_logo">KnowItAll</Link>
+      <Link to="./Classes" id="navbar_logo">KnowItAll</Link>
         <div className="navbar_toggle" id="mobile-menu">
           <span className="bar"></span> 
           <span className="bar"></span>
@@ -31,10 +32,13 @@ const Navbar = ({ theme, toggleTheme }) => {
             <Link to="/Create" className="navbar_links" id="about-page">Create</Link>
           </li>
           <li className="switch">
-           <ReactSwitch onChange={ toggleTheme } checked={theme === 'dark'}/>
+            
+           <ReactSwitch 
+           checkedIcon={true}
+           onChange={ () => toggleTheme() } checked={theme === 'dark'}/>
           </li>
           <li className="navbar_btn">
-            <Link to="#" className="button" id="signup">Sign Up</Link>
+            <Link to="#sign-up" className="button" id="signup">Sign Up</Link>
           </li>
         </ul>
       </div>

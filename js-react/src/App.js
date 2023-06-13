@@ -29,14 +29,14 @@ function App() {
     <ThemeContext.Provider value={{theme, ThemeContext, toggleTheme}}>
     <Router >
       <CoolBg className='bg-color'/>
-      <Navbar toggleTheme={toggleTheme}/>
+      <Navbar theme={theme} toggleTheme={toggleTheme}/>
     
       <div className="App" id={ theme }>
       
       
       <Switch>
         <Route exact path='/'>
-        <ReactSwitch onChange={theme} checked={theme === 'dark'} className="switch"/>
+        
           <Home />
         </Route>
         <Route exact path='/Classes'>
