@@ -38,7 +38,7 @@ const Navbar = ({ theme, toggleTheme }) => {
            onChange={ () => toggleTheme() } checked={theme === 'dark'}/>
           </li>
           <li className="navbar_btn">
-            <Link to="#sign-up" className="button" id="signup">Sign Up</Link>
+            <Link to="/SignUp" className="button" id="signup">Sign Up/In</Link>
           </li>
         </ul>
       </div>

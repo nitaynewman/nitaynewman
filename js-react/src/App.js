@@ -15,6 +15,7 @@ import { createContext } from "react";
 import { useState } from "react";
 import ReactSwitch from 'react-switch';
 import Vedio from "./js/UpLoad";
+import SignUp from "./js/signup/SignUp.js";
 export const ThemeContext = React.createContext(null);
 
 
@@ -51,12 +52,16 @@ function App() {
         <Route exact path='/Upload'>
           <Vedio />
         </Route>
+        <Route exact path='/SignUp'>
+          <SignUp />
+        </Route>        
         <Route exact path='*'>
           <NotFound />
         </Route>
         
+        
       </Switch>
-
+      
       <Footer />
     </div>
     </Router>
