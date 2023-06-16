@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="footer_logo">
               <a href="/" id="footer_logo">KnowItAll</a>
             </div>
-            <p className="website_rights">© KnowItAll 2020. All rights reserved</p>
+            <p className="website_rights">© KnowItAll 2023. All rights reserved to Nitay Newman</p>
             <div className="social_icons">
               <a href="/" className="social_icon--link" target="_blank"
                 ><i className="fab fa-facebook"></i

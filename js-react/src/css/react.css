@@ -25,7 +25,8 @@
     z-index: 999;
   }
   #light .navbar {
-    background: #ddd;
+    background: transparent;
+    z-index: 999;
   }
   
   .navbar_container {
@@ -41,9 +42,8 @@
   
   #navbar_logo {
     background: #9CECFB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100%;
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); 
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -916,7 +916,7 @@
   text-align: center;
   color: whitesmoke;
 }
-#light .Create {
+#light .Create, .Create h2 {
   color: #000;
 }
 .Create label {
@@ -927,9 +927,6 @@
   font-size: 20px;
   color: whitesmoke;
   margin-bottom: 30px;
-}
-#light .Create h2 {
-  color: #000;
 }
 .Create input, .Create textarea, .Create select {
   width: 100% ;
@@ -947,19 +944,29 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  margin: 30px;
 }
 .Upload {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: 50px;
+  margin: 30px; 
+}
+.upVedio{
+  background: #2111;
+  min-width: 400px;
+  border-radius: 5px; 
   
 }
-#light .upVedio{
+#light .upVedio {
   background: whitesmoke;
+  
   min-width: 400px;
   border-radius: 5px;
+}
+#light .upVedio h2 {
+  color: #191919;
 }
 /* not found */
 .not-found {
@@ -969,23 +976,16 @@
   height: 50vh;
   padding: 300px;
 }
-.not-found h2 {
-  font-size: 3rem;
-}
-#light .not-found h2 {
-  color: #131313;
-  
-}
-.not-found p {
-  font-size: 1.5rem;
+.not-found h2, .not-found p {
   color: whitesmoke;
+  font-size: 3rem;
   margin: 30px;
 }
-#light .not-found p {
+#light .not-found h2, #light .not-found p {
   color: #131313;
 }
 .not-found link {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
   /* https://www.youtube.com/watch?v=3-2Pj5hxwrw&t=2341s

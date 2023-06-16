@@ -1,4 +1,4 @@
-import { Button, Spin, Upload, massage } from "antd";
+import { Button, Spin, Upload } from "antd";
 import '../css/react.css'
 
 
@@ -52,7 +52,7 @@ const Vedio = () => {
             }}
             >
                 <h2>drag vedio here</h2>
-                 <br />
+                 
                  <Button>Upload vedio</Button>
             </Upload.Dragger>
         </div>

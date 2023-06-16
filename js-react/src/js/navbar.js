@@ -12,7 +12,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (  
         <nav className="navbar">
       <div className="navbar_container">
-      <Link to="./Classes" id="navbar_logo">KnowItAll</Link>
+      <Link to="/" id="navbar_logo">KnowItAll</Link>
         <div className="navbar_toggle" id="mobile-menu">
           <span className="bar"></span> 
           <span className="bar"></span>
@@ -38,7 +38,7 @@ const Navbar = ({ theme, toggleTheme }) => {
            onChange={ () => toggleTheme() } checked={theme === 'dark'}/>
           </li>
           <li className="navbar_btn">
-            <Link to="/SignUp" className="button" id="signup">Sign Up/In</Link>
+            <Link to="/SignUp" className="button" id="signup">JOIN IN</Link>
           </li>
         </ul>
       </div>

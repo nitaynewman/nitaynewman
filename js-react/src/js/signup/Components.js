@@ -12,20 +12,20 @@ padding-top: 300px;
 `;
 
 export const SignUpContainer = styled.div`
- position: absolute;
- 
- height: 100%;
- transition: all 0.6s ease-in-out;
- 
- width: 50%;
- opacity: 0;
- z-index: 1;
- ${props => props.signinIn !== true ? `
-   transform: translateX(100%);
-   opacity: 1;
-   z-index: 5;
- ` 
- : null}
+position: absolute;
+top: 0;
+height: 100%;
+transition: all 0.6s ease-in-out;
+left: 0;
+width: 50%;
+opacity: 0;
+z-index: 1;
+${props => props.signinIn !== true ? `
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+` 
+: null}
 `;
 
 
@@ -67,8 +67,8 @@ width: 100%;
 
 export const Button = styled.button`
    border-radius: 20px;
-   border: 1px solid #ff4b2b;
-   background-color: #ff4b2b;
+   border: 1px solid #a8c0ff;
+   background-color: #a8c0ff;
    color: #ffffff;
    font-size: 12px;
    font-weight: bold;
@@ -108,9 +108,9 @@ ${props =>
 `;
 
 export const Overlay = styled.div`
-background: #ff416c;
-background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-background: linear-gradient(to right, #ff4b2b, #ff416c);
+background: #a8c0ff; /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8c0ff, #3f2b96); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a8c0ff, #3f2b96);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 0 0;
