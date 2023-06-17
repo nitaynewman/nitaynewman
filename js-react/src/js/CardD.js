@@ -5,8 +5,8 @@ import { useParams, useHistory } from "react-router-dom";
 import useFetch from "./useFetch";
 import Cards from "./Cards";
 
-
-
+// do a comment section for the page
+// https://www.youtube.com/watch?v=M4urOf4zpSk
 const CardD = () => {
     const { id } = useParams();
     const { data: cards } = useFetch('http://localhost:8000/cards');

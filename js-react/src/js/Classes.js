@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import '../css/App.css';
 import Cards from "./Cards";
 import useFetch from "./useFetch";
+import { useState } from "react";
 
 
 // import './/index.css';

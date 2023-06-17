@@ -58,7 +58,7 @@ const Cards = ({ cards, Title,  }) => {
               <h1>{card.title}</h1>
               <h3>by professor: {card.professor}</h3>
               <button>
-                <Link to={`/Classes/${card.id}`} className="navbar_links">{ }</Link>
+                <Link to={`/Classes/${card.id}`} className="navbar_links">class</Link>
               </button>
             </div>
           </div>
