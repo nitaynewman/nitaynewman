@@ -16,7 +16,7 @@ import { useState } from "react";
 import ReactSwitch from 'react-switch';
 import Vedio from "./js/UpLoad";
 import SignUp from "./js/signup/SignUp.js";
-import Comment from './js/comments/Comment.js'
+import Comment from './js/comments/Comments'
 export const ThemeContext = React.createContext(null);
 
 
